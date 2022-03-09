@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp Form Design With Validation</title>
+  <link rel="icon" type="image/x-icon" href="images/habib_favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="input_wrap">
+    <h1>Sign Up</h1>
+    
+    <div class="social_icon">
+      <ul>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+
+      <form action="">
+        <div class="input_items">
+          <label>Your Name <span>*</span></label>
+          <input type="text" placeholder="Name" required>
+        </div>
+        <div class="input_items">
+          <label>Your Email <span>*</span></label>
+          <input id="myEmail" type="email" placeholder="Email" required>
+        </div>
+        <div class="input_items">
+          <label>Your Password <span>*</span></label>
+          <input title="Password Must Contain At Least One Number, One Uppercase And LowerCase Latter And At Least 8 Characters" id="passwordInput" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        </div>
+        <div id="info_msg">
+          <h3>Password must contain the following:</h3>
+          <p id="letter" class="invalid_info"> A <b> Small (Lowercase)</b> letter</p>
+          <p id="capital" class="invalid_info"> A <b> Capital (Uppercase)</b> letter</p>
+          <p id="number" class="invalid_info"> A <b>Number</b></p>
+          <p id="length" class="invalid_info"> Only <b>8 characters</b></p>
+        </div>
+        <div class="input_items">
+          <button type="submit"> Create Account</button>
+        </div>
+      </form>
+      <div class="inner_input">
+        <span>Already have an account <a class="active" href="#">Login</a> </span>
+      </div>
+  </div>
+  </div>
+  <footer class="ft_area">
+    <p>All Rights Reserved By | &copy; <a href="https://github.com/AhshanHabib26">Ahshan Habib</a> </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
